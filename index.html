@@ -1,28 +1,84 @@
 <!doctype html>
 <html>
 	<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Code Club</title>
-    <link rel="stylesheet" href="style.css">
+		<meta name="description" content="Computer club for children 9-11 years old" />
+		<meta name="keywords" content="free fun children school computer code club london" />
+	    <style>
+	    	body {
+				margin:0;
+				font-family:Calibri,sans-serif;
+				color:#57534a;
+			}
+			h1 {
+				text-align:center;
+			}
+			.container {
+				display:table;
+				position:absolute;
+				height:100%;
+				width:100%;
+			}
+			.board {
+				padding:0.5em;
+				background-color:#fff;
+			}
+			@media print, screen and (min-width: 36em) {
+				body {
+					font-size:133%;
+				}
+				.board {
+					padding:1em;
+				}
+			}
+			@media print, screen and (min-width: 670px) {
+				body {
+					background-image:url("invader.jpg");
+				}
+				.board {
+					width:595px;
+					margin:auto;
+					-webkit-box-shadow:0 0 4em #003;
+					-moz-box-shadow:0 0 4em #003;
+					box-shadow:0 0 4em #003;
+				}
+			}
+	    </style>
 	</head>
 	<body>
-		<h1><img src="codeclub.jpg" width="300" height="300">
-		<br />
-		Charing Cross Library Code Club</h1>
-		<h2>What we do</h2>
-		<p>We're a computer coding club for children aged 9-11 at Charing Cross Library in the heart of London's West-End.
-		These are the programming languages we teach:</p>
-		<ol>
-			<li><a href="http://scratch.mit.edu/mystuff/">Scratch</a></li>
-			<li><a href="http://www.codecademy.com/en/tracks/web">Website markup (HTML &amp; CSS)</a></li>
-			<li><a href="http://pythonfiddle.com/">Python</a></li>
-			<li><a href="http://www.codecademy.com/en/tracks/javascript">JavaScript</a></li>
-		</ol>
-		<h2>Join us</h2>
-		<ul>
-			<li><a href="https://www.codeclub.org.uk/clubs/53a1ab8c9d200f780500002c">Where, when &amp; registration</a></li>
-		</ul>
+		<div class="container">
+			<div class="board">
+				<h1><img src="codeclub.jpg" alt="Code Club" width="150" height="150">
+				<br />
+				Charing Cross Library</h1>
+				<h2>What we do</h2>
+				<p>
+					We're a free computer coding club for children aged 9-11 at
+					<a href="https://plus.google.com/110070989197483812341/about">
+						Charing Cross Library in the heart of London's West-End.
+					</a>
+					These are the programming languages we teach:
+				</p>
+				<ol>
+					<li><a href="http://scratch.mit.edu/mystuff/">Scratch</a></li>
+					<li><a href="http://jsfiddle.net/">Website markup (HTML &amp; CSS)</a></li>
+					<li><a href="http://pythonfiddle.com/">Python</a></li>
+					<li><a href="http://www.codecademy.com/en/tracks/javascript">JavaScript</a></li>
+				</ol>
+				<p>Here are more advanced projects for you to try:</p>
+				<ul>
+					<li><a href="http://www.codeavengers.com/">Websites (HTML, CSS &amp; JavaScript)</a></li>
+					<li><a href="https://dash.generalassemb.ly/projects">Advanced Websites (HTML, CSS, JavaScript &amp; modern libraries)</a></li>
+					<li><a href="http://tryruby.org/levels/1/challenges/0">Ruby</a></li>
+				</ul>
+				<h2>Join us</h2>
+				<ul>
+					<li><a href="https://www.codeclub.org.uk/clubs/53a1ab8c9d200f780500002c">Where, when &amp; registration</a></li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>
