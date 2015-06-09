@@ -1,0 +1,49 @@
+body {
+	margin:0;
+	font-family:Calibri,sans-serif;
+	color:#57534a;
+}
+h3, a:link {
+	color:#203A70;
+}
+h1, h3 {
+	text-align:center;
+}
+h3 {
+	font:28pt 'Goudy Old Style','Times New Roman',serif;
+}
+.libraries {
+	font:bold 14pt 'Times New Roman',serif;
+}
+.container {
+	display:table;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.board {
+	padding:0.5em;
+	background-color:#fff;
+}
+@media print, screen and (min-width:36em) {
+	body {
+		font-size:125%;
+	}
+	.board {
+		padding:1em;
+	}
+}
+@media print, screen and (min-width:670px) {
+	body {
+		background-image:url("invader.jpg");
+		background-position:center top;
+	}
+	.board {
+		width:595px;
+		margin:auto;
+		background-color:rgba(255,255,255,0.94);
+		-webkit-box-shadow:0 0 4em #003;
+		-moz-box-shadow:0 0 4em #003;
+		box-shadow:0 0 4em #003;
+	}
+}
