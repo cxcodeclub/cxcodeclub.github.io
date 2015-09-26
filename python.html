@@ -20,9 +20,16 @@
 				display:inline;
 			}
 		</style>
+		<script type="text/javascript">
+			function trinket(tid){
+				console.log(tid);
+				document.getElementById("trink").src = "https://trinket.io/embed/python/" + tid;
+				return true;
+			}
+		</script>
 	</head>
 	<body>
-		<iframe src="https://trinket.io/embed/python/96c789b622" width="100%" height="92%"
+		<iframe src="https://trinket.io/embed/python/96c789b622" width="100%" height="92%" id="trink"
 			frameborder="0" marginwidth="0" marginheight="0"></iframe>
 		<ul>
 			<li>1)<a href="http://projects.codeclub.org.uk/en-GB/09_python/01/ASCII%20Art.html"
@@ -45,10 +52,14 @@
 				target="clubproject">Text-speak</a></li>
 			<li>10)<a href="http://projects.codeclub.org.uk/en-GB/10_python/04/Pokedex.html"
 				target="clubproject">Pokedex</a></li>
-			<li>11)<a href="http://projects.codeclub.org.uk/en-GB/10_python/05/RPG.html"
+			<li>11)<a onclick="return trinket('1dd0cb5b25');"
+				href="http://projects.codeclub.org.uk/en-GB/10_python/05/RPG.html"
 				target="clubproject">RPG</a></li>
-			<li>12)<a href="http://projects.codeclub.org.uk/en-GB/10_python/06/Minecraft2D.html"
+<!-- Minecraft2D requires pygame, which isn't installable in Trinket
+			<li>12)<a onclick="return trinket('d2f871d647');"
+				href="http://projects.codeclub.org.uk/en-GB/10_python/06/Minecraft2D.html"
 				target="clubproject">Minecraft 2D</a></li>
+-->
 			<li>13)<a href="http://projects.codeclub.org.uk/en-GB/17_python_archive/01/Hangman.html"
 				target="clubproject">Hangman</a></li>
 			<li>14)<a href="http://projects.codeclub.org.uk/en-GB/17_python_archive/02/Noughts%20and%20Crosses.html"
