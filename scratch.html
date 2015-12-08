@@ -94,11 +94,11 @@
 			function show(id) {
 				document.getElementById(id).className = 'todays-special';
 			}
-			if (month == 9 && day > 6 && day <= 13)
+			if (month === 9 && day > 6 && day <= 13)
 				show('ada');
-			else if ((month == 9 && day >= 22) || (month == 10 && day <= 5))
+			else if ((month === 9 && day >= 22) || (month === 10 && day <= 5))
 				show('fireworks');
-			else if ((month == 11 && day >= 12))
+			else if (month === 11)
 				show('xmas');
 
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
