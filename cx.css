@@ -35,8 +35,10 @@ h3 {
 }
 @media print, screen and (min-width:670px) {
 	body {
-		background-image:url("invader.jpg");
-		background-position:center top;
+		background:url("invader.jpg");
+		background-position:center;
+		background-size:cover;
+		background-attachment:fixed;
 	}
 	.board {
 		width:595px;
